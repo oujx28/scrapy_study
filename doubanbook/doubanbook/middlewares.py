@@ -6,6 +6,8 @@
 # http://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+import random
+from .agents import AGENTS_ALL
 
 
 class DoubanbookSpiderMiddleware(object):
@@ -54,3 +56,8 @@ class DoubanbookSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+class CustomUserAgentMiddleware(object):
+    def process_request(self, request, spider):
+        agent = random.choice(AGENTS_ALL)
+        request.headers['User-Agent'] = agent
