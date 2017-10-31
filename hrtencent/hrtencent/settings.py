@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for doubanbook project
+# Scrapy settings for hrtencent project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'doubanbook'
+BOT_NAME = 'hrtencent'
 
-SPIDER_MODULES = ['doubanbook.spiders']
-NEWSPIDER_MODULE = 'doubanbook.spiders'
+SPIDER_MODULES = ['hrtencent.spiders']
+NEWSPIDER_MODULE = 'hrtencent.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'doubanbook (+http://www.yourdomain.com)'
+#USER_AGENT = 'hrtencent (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,14 +47,14 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'doubanbook.middlewares.DoubanbookSpiderMiddleware': 543,
+#    'hrtencent.middlewares.HrtencentSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-#    'doubanbook.middlewares.MyCustomDownloaderMiddleware': 543,
-    'doubanbook.middlewares.CustomUserAgentMiddleware': 544,
+#    'hrtencent.middlewares.MyCustomDownloaderMiddleware': 543,
+    'hrtencent.middlewares.CustomUserAgentMiddleware': 544,
 }
 
 # Enable or disable extensions
@@ -66,8 +66,8 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-#    'doubanbook.pipelines.DoubanbookPipeline': 300,
-    'doubanbook.pipelines.JsonWithEncodingPipeline': 300,
+#    'hrtencent.pipelines.HrtencentPipeline': 300,
+    'hrtencent.pipelines.JsonWithEncodingPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

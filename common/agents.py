@@ -494,4 +494,5 @@ AGENTS_ALL = [
             "SearchExpress",
 ]
 AGENT_GOOGLE_IMAGE=["Googlebot-Image/1.0"]
-AGENTS=["Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)"]
+#AGENTS=["Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)"]
+AGENTS=["Mozilla/5.0 (X11; Linux x86_64; rv:27.0) Gecko/20100101 Firefox/27.0"]

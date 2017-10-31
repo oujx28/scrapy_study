@@ -7,10 +7,10 @@
 
 from scrapy import signals
 import random
-from .agents import AGENTS_ALL, AGENTS
+from .agents import AGENTS, AGENTS_ALL
 
 
-class DoubanbookSpiderMiddleware(object):
+class HrtencentSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
@@ -56,6 +56,7 @@ class DoubanbookSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
 
 class CustomUserAgentMiddleware(object):
     def process_request(self, request, spider):
